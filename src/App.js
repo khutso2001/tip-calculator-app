@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Input from "./Input";
+import ProcentSection from "./ProcentSection"
+import Logo from "./assets/images/logo.svg"
+import ResultAmount from "./ResultAmount"
+import ResetButton from "./ResetButton"
+import { useState } from 'react';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={Logo}/>
+      <div className='container'>
+          <div className='calculate-side'>
+              <Input/>
+              <ProcentSection/>
+              <Input/>
+          </div>
+          <div className='calculated-side'>
+            <div className='main-calculated'>
+              <ResultAmount/>
+              <ResultAmount/>
+            </div>
+              <ResetButton/>
+          </div>
+      </div>
     </div>
   );
 }

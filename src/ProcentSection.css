@@ -1,0 +1,47 @@
+.ProcentSection label{
+    color: #5E7A7D;
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    height: 24px;
+}
+.ProcentSection button{
+    max-width: 117px;
+    width: 100%;
+    font-size: 24px;
+    height: 48px;
+    color: #FFFFFF;
+    background: #00474B;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 0.4rem;
+    border: navajowhite;
+
+}
+.ProcentSection input{
+    max-width: 117px;
+    width: 100%;
+    font-size: 24px;
+    height: 48px;
+    background: #F3F9FA;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 0.4rem;
+    border: navajowhite;
+}
+.ProcentSection input:hover {
+    border: 2px solid #26C2AE;
+}
+.ProcentSection button:hover{
+    background: #9FE8DF;
+    color: #00474B;
+}
+.btns-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 17px;
+}
