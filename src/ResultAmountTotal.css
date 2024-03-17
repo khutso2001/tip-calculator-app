@@ -1,0 +1,30 @@
+.ResultAmountTotal{
+    display: flex;
+    justify-content: space-between;
+    max-width: 333px;
+    height: 71px;
+    align-items: center;
+    gap: 5rem;
+}
+.person label{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.person p{
+    color: #7F9D9F;
+    font-size: 13px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+.amount p{
+    color: #26C2AE;
+    font-size: 3rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
