@@ -48,3 +48,18 @@
 .procent-input{
     text-align: center;
 }
+.procent-input:focus{
+    outline: none;
+    box-shadow: 0 0 0 .2rem #26C2AE;
+}
+.ProcentSection button:focus{
+    background:  #26C2AE;
+    color: #00474B;
+}
+
+
+@media (max-width:375px){
+    .ProcentSection{
+        max-width: 311px;
+    }
+}

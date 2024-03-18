@@ -28,3 +28,16 @@
     font-weight: 700;
     font-style: normal;
 }
+@media (max-width:728px){
+    .ResultAmountTotal{
+        max-width: 300px;
+        gap: 0;
+    }
+    
+}
+@media (max-width:375px){
+    .ResultAmountTotal{
+        gap: 0;
+        max-width: 281px;
+    }
+}

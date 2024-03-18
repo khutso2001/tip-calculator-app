@@ -40,7 +40,10 @@
 .bill-InputPerson:hover{
     border: 2px solid #26C2AE;
 }
-
+.bill-InputPerson:focus{
+    outline: none;
+    box-shadow: 0 0 0 .2rem #26C2AE;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -55,4 +58,24 @@ input::-webkit-inner-spin-button {
 }
 .InputPerson-body{
     position: relative;
+}
+.error{
+    color: #E17457;
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:375px){
+    .InputPerson{
+        max-height: 78px 
+    }
+    .labels,.InputPerson{
+        max-width: 311px 
+    }
+
 }

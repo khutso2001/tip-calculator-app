@@ -8,16 +8,17 @@ import { useEffect, useState } from 'react';
 import InputPerson from "./InputPerson"
 import ResultAmountTotal from "./ResultAmountTotal"
 function App() {
- const [bill, setBill]=useState('0');
- const [person,setPerson]=useState('0');
- const [procent, setProcent]=useState('0');
- const [tipAmount,setTipAmount]=useState('0');
- const [total, setTotal]=useState('0');
+ const [bill, setBill]=useState("");
+ const [person,setPerson]=useState("");
+ const [procent, setProcent]=useState("");
+ const [tipAmount,setTipAmount]=useState(0);
+ const [total, setTotal]=useState(0);
 
   useEffect (()=>{
+
    if (bill>0 && procent>0 && person>0){
       setTipAmount(bill*(procent / 100));
-      setTotal( bill+tipAmount)
+      setTotal( bill + tipAmount)
    }
   },[bill,procent,person,tipAmount])
 
@@ -56,7 +57,11 @@ function App() {
               />
             </div>
               <ResetButton 
-              
+               setBill={setBill} 
+               setPerson={setPerson} 
+               setProcent={setProcent} 
+               setTipAmount={setTipAmount} 
+               setTotal={setTotal} 
             />
           </div>
       </div>

@@ -1,9 +1,16 @@
 import "./ResetButton.css"
 
-function ResetButton (){
+function ResetButton (props){
+    const handeleResetButton =()=>{
+        props.setBill("");
+        props.setPerson("");
+        props.setProcent("");
+        props.setTipAmount(0);
+        props.setTotal(0);
+    }
     return(
         <div className="ResetButton">
-            <button>RESET</button>
+            <button onClick={(e)=>{handeleResetButton(e)}}>RESET</button>
         </div>
 
     )

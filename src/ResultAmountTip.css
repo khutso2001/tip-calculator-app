@@ -28,3 +28,17 @@
     font-weight: 700;
     font-style: normal;
 }
+@media (max-width:728px){
+    .ResultAmountTip{
+        max-width: 300px;
+        gap: 0;
+    }
+    
+}
+@media (max-width:375px){
+    .ResultAmountTip{
+        gap: 0;
+        max-width: 281px;
+    }
+    
+}

@@ -7,6 +7,7 @@ function ResultAmountTip (props){
             style:'currency', currency: 'USD'
         }).format(amt);
     }
+
     return(
         <div className="ResultAmountTip">
             <div className="person">
@@ -14,7 +15,7 @@ function ResultAmountTip (props){
                 <p>/ Person</p>
             </div>
             <div className="amount">
-                <p>{returnCurrencyAmt(`${props.tipAmount ? props.tipAmount : "0"}`)}</p>
+                <p>{returnCurrencyAmt(`${+props.tipAmount ? props.tipAmount/props.person : "0"}`)}</p>
             </div>
             
 

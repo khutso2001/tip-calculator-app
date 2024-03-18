@@ -56,3 +56,14 @@ input::-webkit-inner-spin-button {
 .input-body{
     position: relative;
 }
+.bill-input:focus{
+    outline: none;
+    box-shadow: 0 0 0 .2rem #26C2AE;
+}
+
+@media (max-width:375px){
+    .Input{
+        max-width: 311px;
+        max-height: 78px;
+    }
+}

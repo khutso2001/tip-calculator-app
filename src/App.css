@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 30px;
 }
 
 .calculate-side{
@@ -30,7 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+    margin: 0px 15px 0px 15px
 }
 .calculated-side{
     background-color: #00474B;
@@ -42,9 +43,37 @@
     display: grid;
     align-items: center;
     justify-content: center;
-
+    margin-right: 15px;
 }
 .main-calculated{
     display: grid;
     gap: 1rem;
 }
+::selection{
+    background-color: rgb(49, 98, 197);
+    color:#FFFFFF;
+}
+
+@media (max-width:728px){
+   
+}
+
+@media (max-width:375px){
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 789px;
+    }
+    .calculate-side,.calculated-side{
+        max-width: 316px;
+        margin: 0;
+    }
+    .calculated-side{
+        max-height: 257px;
+        max-width: 327px;
+    }
+}
+    
+
+
+
