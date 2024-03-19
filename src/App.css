@@ -54,8 +54,21 @@
     color:#FFFFFF;
 }
 
-@media (max-width:728px){
-   
+@media (max-width:650px){
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 789px;
+        max-width: 550px 
+    }
+    .calculate-side,.calculated-side{
+        max-width: 316px;
+        margin: 0;
+    }
+    .calculated-side{
+        max-height: 257px;
+        max-width: 327px;
+    }
 }
 
 @media (max-width:375px){

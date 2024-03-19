@@ -13,7 +13,7 @@ function ResultAmountTotal (props){
                 <label>total</label>
                 <p>/ Person</p>
             </div>
-            <div className="amount" >
+            <div className="amount-total" >
                 <p>{returnCurrencyAmt(`${+props.total ? props.total/props.person : "0"}`)}</p>
             </div>
             

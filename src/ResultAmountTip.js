@@ -14,7 +14,7 @@ function ResultAmountTip (props){
                 <label>Tip Amount</label>
                 <p>/ Person</p>
             </div>
-            <div className="amount">
+            <div className="amount-tip">
                 <p>{returnCurrencyAmt(`${+props.tipAmount ? props.tipAmount/props.person : "0"}`)}</p>
             </div>
             
